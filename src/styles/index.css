@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "chicken";
+  src: url("../app/fonts/Happy-Chicken.otf");
+}
+
+@font-face {
+  font-family: "TiltWarp";
+  src: url("../app/fonts/TiltWarp-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Amaranth";
+  src: url("../app/fonts/Amaranth-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Baldo";
+  src: url("../app/fonts/Baloo2-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Tajawal";
+  src: url("../app/fonts/Tajawal-Regular.ttf");
+}
+
+.fontchicken {
+  font-family: "chicken";
+}
+
+.fonttilt {
+  font-family: "TiltWarp";
+}
+
+.amaranth {
+  font-family: "Amaranth";
+}
+
+.baldo {
+  font-family: "Baldo";
+}
+
+.tajawal {
+  font-family: "Tajawal";
+}
+
+
+.react-flow__handle {
+  visibility: hidden;
+  /* Oculta visualmente los puertos sin eliminar su funcionalidad */
+}
+
+.bg-informacion {
+  background-color: #7b7ea055;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color1: #150632;
+  --color2: #010008;
+  --colorm: #291450;
+  --bg1: #67a1fe;
+  --bg2: #bd34fe;
+  --colort: #bbbcf1;
+  --c: #261547;
+  --bttn: #583a96;
+  --t: #bbbcf1;
+  scroll-behavior: smooth;
+}
+
+/* html {
+  scrollbar-color: var(--color1) var(--color2);
+} */
+
+.parpadeo1 {
+  animation: parpadeo 1s infinite;
+  /* Llama a la animación */
+}
+
+.parpadeo2 {
+  animation: parpadeo 1.5s infinite;
+  /* Llama a la animación */
+}
+
+.parpadeo3 {
+  animation: parpadeo 2s infinite;
+  /* Llama a la animación */
+}
+
+.parpadeo4 {
+  animation: parpadeo 2.5s infinite;
+  /* Llama a la animación */
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+    /* Opacidad al inicio */
+  }
+
+  50% {
+    opacity: 0.1;
+    /* Opacidad a la mitad */
+  }
+
+  100% {
+    opacity: 1;
+    /* Vuelve a la opacidad inicial */
+  }
+}
+
+.closeAnimate {
+  animation: animateRotate 0.3s;
+}
+
+@keyframes animateRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* scroll */
+
+/* Seleccionar la barra de desplazamiento */
+.scroll-style::-webkit-scrollbar {
+  width: 6px;
+  /* Ancho de la barra de desplazamiento */
+  height: 10px;
+  /* Alto de la barra de desplazamiento (para scroll horizontal) */
+}
+
+/* Estilo del fondo de la barra */
+.scroll-style::-webkit-scrollbar-track {
+  background: #f1f1f100;
+  /* Color de fondo */
+}
+
+/* Estilo de la parte "desplazable" de la barra */
+.scroll-style::-webkit-scrollbar-thumb {
+  background: var(--bg1);
+  /* Color del thumb */
+  border-radius: 10px;
+  /* Bordes redondeados */
+}
+
+/* Cambiar color al pasar el mouse */
+.scroll-style::-webkit-scrollbar-thumb:hover {
+  background: var(--bg1);
+  /* Color al pasar el mouse */
+}
+
+/* Seleccionar la barra de desplazamiento */
+body::-webkit-scrollbar {
+  width: 6px;
+  /* Ancho de la barra de desplazamiento */
+  height: 10px;
+  /* Alto de la barra de desplazamiento (para scroll horizontal) */
+}
+
+/* Estilo del fondo de la barra */
+body::-webkit-scrollbar-track {
+  background: #f1f1f100;
+  /* Color de fondo */
+}
+
+/* Estilo de la parte "desplazable" de la barra */
+body::-webkit-scrollbar-thumb {
+  background: var(--bg1);
+  /* Color del thumb */
+  border-radius: 10px;
+  /* Bordes redondeados */
+}
+
+/* Cambiar color al pasar el mouse */
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--bg1);
+  /* Color al pasar el mouse */
+}
+
+.button_first {
+  position: relative;
+}

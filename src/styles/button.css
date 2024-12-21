@@ -1,0 +1,43 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.button {
+  background-color: var(--bttn);
+  z-index: 10;
+}
+
+.button :hover::before {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  background: conic-gradient(from var(--angle), var(--c), rgb(132, 55, 204));
+  inset: -2px;
+  z-index: -1 !important;
+  border-radius: 0.25rem;
+  animation: anime-rotate 1s infinite linear;
+}
+
+.button :hover::after {
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  background: conic-gradient(from var(--angle), var(--c), rgb(132, 55, 204));
+  inset: -2px;
+  z-index: -1 !important;
+  border-radius: 0.25rem;
+  animation: anime-rotate 1s infinite linear;
+  filter: blur(6px);
+}
+
+@keyframes anime-rotate {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
